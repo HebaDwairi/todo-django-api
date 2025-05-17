@@ -1,0 +1,45 @@
+### Obtain JWT Token (Login)
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+{
+    "username": "",
+    "password": ""
+}
+
+### Refresh JWT Token
+POST http://127.0.0.1:8000/api/token/refresh/
+Content-Type: application/json
+
+{
+    "refresh": ""
+}
+
+### get all todos
+GET http://127.0.0.1:8000/api/todos/
+Authorization: Bearer 
+### post a new todo
+POST http://127.0.0.1:8000/api/todos/
+Content-Type: application/json
+Authorization: Bearer 
+
+{
+    "title": "test endpoints",
+    "description": "the purpose of this todo is to test the endpoints",
+    "completed": false
+}
+
+### update a todo
+PUT http://127.0.0.1:8000/api/todos/1/
+Content-Type: application/json
+Authorization: Bearer 
+
+{
+    "title": "test endpoints",
+    "description": "the purpose of this test is to test the endpoints, done",
+    "completed": true
+}
+
+### delete a todo
+DELETE  http://127.0.0.1:8000/api/todos/1/
+Authorization: Bearer 

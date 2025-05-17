@@ -1,0 +1,47 @@
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Virtual environment
+# Ignore the directory where your Python virtual environment is stored.
+# Common names are venv, env, .venv
+venv/
+env/
+.venv/
+
+# Database files
+db.sqlite3
+
+# Development specific files
+*.swp
+*.swo
+*.log
+
+# Static and media files
+
+/static/
+/media/
+staticfiles/ # Common location for collected static files
+
+# IDE specific files
+.vscode/       # Visual Studio Code settings
+.idea/         # PyCharm/IntelliJ IDEA settings
+*.sublime-project # Sublime Text projects
+*.sublime-workspace # Sublime Text workspaces
+
+# Operating System files
+.DS_Store      # macOS files
+Thumbs.db      # Windows files
+
+# Django specific files (often temporary or sensitive)
+# Ignore your secret key file if you've separated it (highly recommended)
+# Example: If you have a local_settings.py or .env file containing SECRET_KEY
+local_settings.py
+.env
+
+# Migration files (optional - usually kept)
+# Some teams choose to ignore migration files and regenerate them, but it's more common
+# to track them so that migrations are applied consistently across environments.
+# If you choose to ignore them, uncomment the lines below:
+# migrations/0*.py
+# migrations/__init__.py
